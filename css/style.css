@@ -390,7 +390,7 @@ template {
   overflow: hidden; }
 
 .header {
-  min-height: 85px;
+  min-height: 65px;
   display: flex;
   flex-wrap: wrap;
   width: 1336px;
@@ -415,7 +415,7 @@ template {
     padding: 0;
     margin: 0;
     padding-top: 33px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
     margin-left: 262px;
     flex-wrap: wrap;
     list-style-type: none; }
@@ -434,7 +434,7 @@ template {
     padding: 0;
     margin: 0;
     padding-top: 38px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
     margin-left: 208px;
     flex-wrap: wrap;
     list-style-type: none; }
@@ -456,3 +456,86 @@ template {
         padding: 3px 0;
         background-color: #E6C8B4;
         border-radius: 50%; }
+
+.button {
+  display: inline-block;
+  padding: 26px 41px;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #444240; }
+
+.promo {
+  width: 1336px;
+  margin: auto;
+  display: flex;
+  min-height: 768px;
+  background-image: url("/img/main/promo-background.png");
+  background-repeat: no-repeat;
+  background-position-x: -14px; }
+  .promo__catalog {
+    margin-top: 255px;
+    margin-left: 180px; }
+    .promo__catalog .catalog__title {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      font-family: "PlayfairDisplay", Times, serif;
+      font-size: 45px; }
+      .promo__catalog .catalog__title::before {
+        content: "";
+        position: absolute;
+        top: 29px;
+        left: -65px;
+        width: 50px;
+        border-top: 1px solid #8B8371; }
+    .promo__catalog .catalog__name {
+      padding: 0;
+      margin: 0;
+      margin-top: 8px;
+      font-family: "PlayfairDisplay", Times, serif;
+      font-size: 30px;
+      font-weight: normal; }
+    .promo__catalog .catalog__description {
+      width: 250px;
+      margin-top: 30px;
+      font-size: 14px;
+      font-weight: lighter;
+      line-height: 152%; }
+    .promo__catalog .catalog__button {
+      margin-top: 20px;
+      margin-left: -4px; }
+  .promo__watch {
+    position: relative; }
+    .promo__watch .watch__image {
+      position: absolute;
+      left: 124px; }
+    .promo__watch .watch__price {
+      width: 100px;
+      position: absolute;
+      top: 156px;
+      left: 50px;
+      font-size: 16px;
+      font-family: "Prata", Times, serif; }
+      .promo__watch .watch__price::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -65px;
+        width: 50px;
+        border-top: 1px solid #8B8371; }
+    .promo__watch .watch__description {
+      position: absolute;
+      width: 140px;
+      bottom: 105px;
+      left: 586px;
+      font-size: 16px;
+      font-family: "Prata", Times, serif; }
+      .promo__watch .watch__description::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -65px;
+        width: 50px;
+        border-top: 1px solid #8B8371; }
