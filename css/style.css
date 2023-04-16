@@ -457,6 +457,72 @@ template {
         background-color: #E6C8B4;
         border-radius: 50%; }
 
+.footer__wrapper {
+  width: 100%;
+  background-color: #444240; }
+
+.footer {
+  width: 1336px;
+  margin: auto;
+  display: flex;
+  min-height: 275px;
+  color: #fff; }
+  .footer__info {
+    padding-top: 70px;
+    padding-left: 180px; }
+  .footer__link {
+    position: relative; }
+  .footer__heading {
+    margin-left: 30px;
+    font-family: "PlayfairDisplay";
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 2.5px;
+    color: #fff; }
+  .footer__logo {
+    position: absolute;
+    top: -9px;
+    left: 0px; }
+  .footer__contacts {
+    padding: 0;
+    margin-top: 23px;
+    list-style-type: none; }
+    .footer__contacts .footer__contact {
+      margin-bottom: 10px; }
+      .footer__contacts .footer__contact a {
+        color: #fff;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px; }
+  .footer__about {
+    margin-top: 65px;
+    margin-left: 143px; }
+  .footer__clients {
+    margin-top: 65px;
+    margin-left: 143px; }
+  .footer__shipment {
+    margin-top: 65px;
+    margin-left: 143px; }
+  .footer__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase; }
+  .footer__list {
+    padding: 0;
+    margin-top: 25px;
+    list-style-type: none; }
+    .footer__list .footer__item {
+      margin-bottom: 6px; }
+    .footer__list .footer__link {
+      color: #fff;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px; }
+
 .button {
   display: inline-block;
   padding: 26px 41px;
@@ -523,7 +589,7 @@ template {
         content: "";
         position: absolute;
         top: 5px;
-        left: -65px;
+        left: 90px;
         width: 50px;
         border-top: 1px solid #8B8371; }
     .promo__watch .watch__description {
@@ -703,7 +769,7 @@ template {
   background-color: #fff; }
 
 .news {
-  min-height: 631px;
+  min-height: 608px;
   width: 1336px;
   margin: auto;
   display: flex; }
