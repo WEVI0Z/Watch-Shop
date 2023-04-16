@@ -91,51 +91,55 @@
                 <span class="watch__description">28 мм диаметр</span>
             </div>
         </section>
-        <section class="popular">
-            <div class="popular__header">
-                <h2 class="popular__heading">Популярные модели</h2>
-                <a href="#" class="popular__link">Смотреть все</a>
-            </div>
-            <ul class="popular__watches">
-                <li class="popular__watch">
-                    <h3 class="watch__name">RADO</h3>
-                    <span class="watch__price">65 300₽</span>
-                    <img width="313" height="313" src="img/main/main-watch-1.png" alt="Часы RADO" class="watch__image">
-                    <a href="#" class="watch__link">Подробнее</a>
-                </li>
-                <li class="popular__watch">
-                    <h3 class="watch__name">BVLGARI</h3>
-                    <span class="watch__price">81 700₽</span>
-                    <img width="313" height="313" src="img/main/main-watch-2.png" alt="Часы BVLGARI" class="watch__image">
-                    <a href="#" class="watch__link">Подробнее</a>
-                </li>
-                <li class="popular__watch">
-                    <h3 class="watch__name">BVLGARI</h3>
-                    <span class="watch__price">72 700₽</span>
-                    <img width="313" height="313" src="img/main/main-watch-3.png" alt="Часы BVLGARI" class="watch__image">
-                    <a href="#" class="watch__link">Подробнее</a>
-                </li>
-            </ul>
-        </section>
+        <div class="popular__wrapper">
+            <section class="popular">
+                <div class="popular__header">
+                    <h2 class="popular__heading">Популярные модели</h2>
+                    <a href="#" class="popular__link">Смотреть все</a>
+                </div>
+                <ul class="popular__watches">
+                    <li class="popular__watch">
+                        <h3 class="watch__name">RADO</h3>
+                        <span class="watch__price">65 300₽</span>
+                        <img width="313" height="313" src="img/main/main-watch-1.png" alt="Часы RADO" class="watch__image">
+                        <a href="#" class="watch__link">Подробнее</a>
+                    </li>
+                    <li class="popular__watch">
+                        <h3 class="watch__name">BVLGARI</h3>
+                        <span class="watch__price">81 700₽</span>
+                        <img width="313" height="313" src="img/main/main-watch-2.png" alt="Часы BVLGARI" class="watch__image">
+                        <a href="#" class="watch__link">Подробнее</a>
+                    </li>
+                    <li class="popular__watch">
+                        <h3 class="watch__name">BVLGARI</h3>
+                        <span class="watch__price">72 700₽</span>
+                        <img width="313" height="313" src="img/main/main-watch-3.png" alt="Часы BVLGARI" class="watch__image">
+                        <a href="#" class="watch__link">Подробнее</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
         <section class="qualities">
             <h2 class="qualities__title visually-hidden">Преимущества</h2>
             <div class="qualities__slider">
-                <div class="qualities__slide">
-                    <img src="img/main/quality-banner.jpg" alt="Часы" class="slide__picture">
-                    <div class="slide__right-side">
-                        <h3 class="slide__title">Подлинное качество</h3>
-                        <p class="slide__description">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
-                        <a href="" class="slide__button button">Смотреть каталог</a>
-                    </div>
-                </div>
+                <ul class="qualities__slides">
+                    <li class="qualities__slide">
+                        <img src="img/main/quality-banner.jpg" alt="Часы" class="slide__picture">
+                        <div class="slide__right-side">
+                            <h3 class="slide__title">Подлинное качество</h3>
+                            <p class="slide__description">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
+                            <a href="" class="slide__button button">Смотреть каталог</a>
+                        </div>
+                    </li>
+                </ul>
                 <div class="slider__controls">
-                    <button class="slider__left-arrow">
+                    <button class="slider__arrow slider__arrow--left">
                         <svg width="7" height="12">
                             <use xlink:href="img/sprite.svg#arrow-left"></use>
                         </svg>
                     </button>
                     <span class="slider__page-number">01</span>
-                    <button class="slider__right-arrow">
+                    <button class="slider__arrow slider__arrow--right">
                         <svg width="7" height="12">
                             <use xlink:href="img/sprite.svg#arrow-right"></use>
                         </svg>

@@ -1,5 +1,11 @@
+.popular__wrapper {
+    width: 100%;
+    background-color: #fff;
+}
+
 .popular {
-    min-height: 680px;
+    padding-top: 50px;
+    min-height: 655px;
     width: $pc-width;
     margin: auto;
     background-color: #fff;
@@ -10,7 +16,6 @@
     }
 
     &__heading {
-        margin-top: 76px;
 
         text-align: center;
         font-family: $playfair;
