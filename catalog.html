@@ -349,8 +349,16 @@
             </div>
             <div class="bands__slider">
                 <div class="slider__controls">
-                    <button class="control__button control__button--left" aria-label="Левая кнопка слайдера"></button>
-                    <button class="control__button control__button--left" aria-label="Правая кнопка слайдера"></button>
+                    <button class="control__button control__button--left" aria-label="Левая кнопка слайдера">
+                        <svg width="12" height="23">
+                            <use xlink:href="img/sprite.svg#arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="control__button control__button--right" aria-label="Правая кнопка слайдера">
+                        <svg width="12" height="23">
+                            <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                    </button>
                 </div>
                 <ul class="slider__list">
                     <li class="slider__item">
@@ -471,7 +479,7 @@
                             Время доставки
                         </a>
                     </li>
-                    <li class="footer_sort-arrow-down_item">
+                    <li class="footer__item">
                         <a href="#" class="footer__link">
                             Гарантии и ремонт
                         </a>

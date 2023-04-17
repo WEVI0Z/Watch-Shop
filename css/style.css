@@ -433,16 +433,16 @@ template {
     list-style-type: none; }
     .header .site-navigation__list .site-navigation__item {
       margin-right: 64px; }
-      .header .site-navigation__list .site-navigation__item:hover, .header .site-navigation__list .site-navigation__item:active {
-        opacity: 0.5; }
-      .header .site-navigation__list .site-navigation__item:active {
-        opacity: 0.7; }
       .header .site-navigation__list .site-navigation__item .site-navigation__link {
         font-size: 14px;
         font-weight: normal;
         color: #555248; }
-    .header .site-navigation__list .site-navigation__link--active {
-      color: #A69876; }
+        .header .site-navigation__list .site-navigation__item .site-navigation__link--active {
+          color: #A69876; }
+        .header .site-navigation__list .site-navigation__item .site-navigation__link:hover, .header .site-navigation__list .site-navigation__item .site-navigation__link:active {
+          opacity: 0.5; }
+        .header .site-navigation__list .site-navigation__item .site-navigation__link:active {
+          opacity: 0.7; }
   .header .user-navigation__list {
     display: flex;
     padding: 0;
@@ -486,6 +486,11 @@ template {
     padding-left: 180px; }
   .footer__link {
     position: relative; }
+    .footer__link:hover, .footer__link:focus {
+      text-decoration: none;
+      opacity: 0.5; }
+    .footer__link:active {
+      opacity: 0.7; }
   .footer__heading {
     margin-left: 30px;
     font-family: "PlayfairDisplay";
@@ -548,12 +553,12 @@ template {
 
 .path {
   width: 1336px;
-  margin: auto;
-  margin-left: 172px; }
+  margin: auto; }
   .path__list {
     display: flex;
     padding: 0;
     margin-top: 43px;
+    margin-left: 100px;
     list-style-type: none; }
   .path__link {
     color: #B3B3B3;
@@ -1154,21 +1159,38 @@ template {
     .bands__link:active {
       opacity: 0.7; }
   .bands__slider {
-    padding-left: 90px; }
+    padding-left: 90px;
+    position: relative; }
+    .bands__slider .slider__controls .control__button {
+      position: absolute;
+      top: 191.5px;
+      background: none;
+      border: none; }
+      .bands__slider .slider__controls .control__button--right {
+        right: 44px; }
+      .bands__slider .slider__controls .control__button--left {
+        left: 36px; }
+      .bands__slider .slider__controls .control__button:hover, .bands__slider .slider__controls .control__button:focus {
+        opacity: 0.5;
+        cursor: pointer; }
+      .bands__slider .slider__controls .control__button:active {
+        opacity: 0.7; }
     .bands__slider .slider__list {
       display: flex;
       padding: 0;
+      margin-bottom: 38px;
+      position: relative;
       list-style-type: none; }
       .bands__slider .slider__list .slider__item {
-        width: 252px;
-        min-height: 300px;
+        width: 360px;
+        min-height: 374px;
         position: relative;
-        margin-right: 35px;
-        margin-bottom: 35px;
+        margin-bottom: 53px;
+        margin-right: 30px;
         background-color: #FDFDFB; }
         .bands__slider .slider__list .slider__item .item__link {
           display: flex;
-          padding-top: 19px;
+          padding-top: 39px;
           padding-left: 20px;
           flex-direction: column; }
         .bands__slider .slider__list .slider__item .item__title {

@@ -41,22 +41,23 @@
         .site-navigation__item {
             margin-right: 64px;
 
-            &:hover, &:active {
-                opacity: 0.5;
-            }
-    
-            &:active {
-                opacity: 0.7;
-            }
-
             .site-navigation__link {
                 font-size: 14px;
                 font-weight: normal;
                 color: $header-text-color;
+
+                &--active {
+                    color: #A69876;
+                }
+
+                &:hover, &:active {
+                    opacity: 0.5;
+                }
+        
+                &:active {
+                    opacity: 0.7;
+                }
             }
-        }
-        .site-navigation__link--active {
-            color: #A69876;
         }
     }
 
