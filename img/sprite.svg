@@ -78,5 +78,11 @@
             <path d="M1 1L5 4.5L1 8" stroke="#BDB9B5"/>
         </svg>
     </symbol>
+
+    <symbol viewBox="0 0 12 7" id="sort-arrow-down">
+        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1L6 6L11 1" stroke="#1B1A17" stroke-width="0.5"/>
+        </svg>
+    </symbol>
   </defs>
 </svg>

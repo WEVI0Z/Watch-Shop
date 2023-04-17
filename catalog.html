@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Каталог</title>
 </head>
-<body>
+<body class="body--second-background">
     <header class="header">
         <a href="./index.html" class="header__link">
             <svg class="header__logo" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,44 +104,46 @@
         </div>
 
         <section class="watches">
-            <h2 class="watches__title">Мужские часы</h2>
-            <div class="watches__sort">
-                <span class="sort__text">
-                    Сортировать по:
-                </span>
-                <button class="sort__button up-to-down">
-                    популярности
-                </button>
+            <div class="watches__header">
+                <h2 class="watches__title">Мужские часы</h2>
+                <div class="watches__sort">
+                    <span class="sort__text">
+                        Сортировать по:
+                    </span>
+                    <button class="sort__button sort__button--up-to-down">
+                        популярности
+                        <svg class="sort__arrow sort__arrow--up-to-down" width="12" height="7">
+                            <use xlink:href="img/sprite.svg#sort-arrow-down"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
             <div class="watches__catalog">
                 <form action="" method="get" class="catalog__filter">
-                    <legend class="filter__legend">\
-                        Стоимость
-                        <button class="filter__button"></button>
-                    </legend>
+                    <button class="filter__button" aria-label="Кнопка 'Скрыть/Развернуть'">
+                        <legend class="filter__legend">
+                            Стоимость
+                        </legend>
+                    </button>
                     <div class="filter__price-slider">
                         <div class="slider__line" aria-label="Полоска слайдера"></div>
                         <div class="slider__line--fulled" aria-label="Заполненная полоска слайдера"></div>
                         <div class="slider__drags">
-                            <button class="slider__left-button slider__button" aria-label="Левая кнопка слайдера">
-
-                            </button>
-                            <button class="slider__right-button slider__button" aria-label="Правая кнопка слайдера">
-
-                            </button>
-                        </div>
-                        <div class="slider__prices">
-                            <span class="slider__left-price" aria-label="Левый выбранный предел цены">
+                            <button class="slider__button--left slider__button" aria-label="Левый ползунок слайдера">
                                 12 000 ₽
-                            </span>
-                            <span class="slier__right-price" aria-label="Правый выбранный предел цены">
+                            </button>
+                            <button class="slider__button--right slider__button" aria-label="Правый ползунок слайдера">
                                 90 000 ₽
-                            </span>
+                            </button>
                         </div>
                     </div>
                     <fieldset class="filter__checkboxes">
-                        <legend class="filter__legend">Бренд<button class="filter__button"></button></legend>
-                        <ul class="filter__list>
+                        <button class="filter__button" aria-label="Кнопка 'Скрыть/Развернуть'">
+                            <legend class="filter__legend">
+                                Бренд
+                            </legend>
+                        </button>
+                        <ul class="filter__list">
                             <li class="filter__item">
                                 <label>
                                     Techne
@@ -181,7 +183,11 @@
                         </ul>
                     </fieldset>
                     <fieldset class="filter__checkboxes">
-                        <legend class="filter__legend">Механизм<button class="filter__button filter__button--hide"></button></legend>
+                        <button class="filter__button filter__button--hide" aria-label="Кнопка 'Скрыть/Развернуть'">
+                            <legend class="filter__legend">
+                                Механизм
+                            </legend>
+                        </button>
                         <ul class="filter__list visually-hidden">
                             <li class="filter__item">
                                 <label>
@@ -198,7 +204,11 @@
                         </ul>
                     </fieldset>
                     <fieldset class="filter__checkboxes">
-                        <legend class="filter__legend">Материал<button class="filter__button filter__button--hide"></button></legend>
+                        <button class="filter__button filter__button--hide"  aria-label="Кнопка 'Скрыть/Развернуть'">
+                            <legend class="filter__legend">
+                                Материал
+                            </legend>
+                        </button>
                         <ul class="filter__list visually-hidden">
                             <li class="filter__item">
                                 <label>
@@ -215,7 +225,11 @@
                         </ul>
                     </fieldset>
                     <fieldset class="filter__checkboxes">
-                        <legend class="filter__legend">Цвет<button class="filter__button filter__button--hide"></button></legend>
+                        <button class="filter__button filter__button--hide" aria-label="Кнопка 'Скрыть/Развернуть'">
+                            <legend class="filter__legend">
+                                Цвет
+                            </legend>
+                        </button>
                         <ul class="filter__list visually-hidden">
                             <li class="filter__item">
                                 <label>
@@ -284,13 +298,12 @@
                     <li class="catalog__commercial">
                         <span class="commercial__procentage">-20%</span>
                         <p class="commercial__description">На вторую позицию в чеке</p>
-                        <img src="img/catalog/promo-watch.png" alt="Изображение часов" class="commercial__image">
                     </li>
                     <li class="catalog__watch">
                         <a href="./info.html">
-                            <h3 class="watch__name">Techne</h3>
+                            <h3 class="watch__name">Bvlgari</h3>
                             <span class="watch__price">72 700 ₽</span>
-                            <img src="img/catalog/watch_6.png" alt="Часы Techne" class="watch__image">
+                            <img src="img/catalog/watch_6.png" alt="Часы Bvlgari" class="watch__image">
                         </a>
                     </li>
                     <li class="catalog__watch">
@@ -310,14 +323,22 @@
                 </ul>
             </div>
             <div class="watches__pagination">
-                <button class="pagination__button--right pagination__button"></button>
+                <a href="#" class="pagination__button--right pagination__button" aria-label="Левая кнопка">
+                    <svg width="7" height="12">
+                        <use xlink:href="img/sprite.svg#arrow-left"></use>
+                    </svg>
+                </a>
                 <ul class="pagination__pages pagination__pages--wrap">
                     <li class="pagination__page"><a href="#">1</a></li>
                     <li class="pagination__page"><a href="#">2</a></li>
-                    <li class="pagination__page"><a href="#">3</a></li>
+                    <li class="pagination__page pagination__page--active"><a href="#">3</a></li>
                     <li class="pagination__page"><a href="#">12</a></li>
                 </ul>
-                <button class="pagination__button--left pagination__button"></button>
+                <a href="#" class="pagination__button--left pagination__button" aria-label="Правая кнопка">
+                    <svg width="7" height="12">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                </a>
             </div>
         </section>
 
@@ -450,7 +471,7 @@
                             Время доставки
                         </a>
                     </li>
-                    <li class="footer__item">
+                    <li class="footer_sort-arrow-down_item">
                         <a href="#" class="footer__link">
                             Гарантии и ремонт
                         </a>
