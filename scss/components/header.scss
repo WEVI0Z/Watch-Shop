@@ -55,6 +55,9 @@
                 color: $header-text-color;
             }
         }
+        .site-navigation__link--active {
+            color: #A69876;
+        }
     }
 
     .user-navigation__list {

@@ -26,7 +26,7 @@
         <nav class="header__site-navigation">
             <ul class="site-navigation__list">
                 <li class="site-navigation__item">
-                    <a href="./catalog.html" class="site-navigation__link">
+                    <a href="./catalog.html" class="site-navigation__link site-navigation__link--active">
                         Каталог
                     </a>
                 </li>
@@ -81,17 +81,23 @@
             <ul class="path__list">
                 <li class="path__item">
                     <a href="" class="path__link">
-                        Главная
+                        главная
                     </a>
+                    <svg width="6" height="9">
+                        <use xlink:href="img/sprite.svg#path-arrow"></use>
+                    </svg>
                 </li>
                 <li class="path__item">
                     <a href="" class="path__link">
-                        Каталог
+                        каталог
                     </a>
+                    <svg width="6" height="9">
+                        <use xlink:href="img/sprite.svg#path-arrow"></use>
+                    </svg>
                 </li>
                 <li class="path__item">
-                    <a href="" class="path__link">
-                        Мужские часы
+                    <a href="" class="path__link path__link--active">
+                        мужские часы
                     </a>
                 </li>
             </ul>
@@ -109,8 +115,10 @@
             </div>
             <div class="watches__catalog">
                 <form action="" method="get" class="catalog__filter">
-                    <label for="" class="filter__label"></label>
-                    <button class="filter__button"></button>
+                    <legend class="filter__legend">\
+                        Стоимость
+                        <button class="filter__button"></button>
+                    </legend>
                     <div class="filter__price-slider">
                         <div class="slider__line" aria-label="Полоска слайдера"></div>
                         <div class="slider__line--fulled" aria-label="Заполненная полоска слайдера"></div>
@@ -131,7 +139,221 @@
                             </span>
                         </div>
                     </div>
+                    <fieldset class="filter__checkboxes">
+                        <legend class="filter__legend">Бренд<button class="filter__button"></button></legend>
+                        <ul class="filter__list>
+                            <li class="filter__item">
+                                <label>
+                                    Techne
+                                    <input type="checkbox" name="brand" value="techne" class="filter__checkbox" checked>
+                                </label>
+                            </li>
+                            <li class="filter__item">
+                                <label>
+                                    Rado
+                                    <input type="checkbox" name="brand" value="rado" class="filter__checkbox" checked>
+                                </label>
+                            </li>
+                            <li class="filter__item">
+                                <label>
+                                    Bvlgari
+                                    <input type="checkbox" name="brand" value="bvlgari" class="filter__checkbox" checked>
+                                </label>
+                            </li>
+                            <li class="filter__item">
+                                <label>
+                                    Tissot
+                                    <input type="checkbox" name="brand" value="tissot" class="filter__checkbox">
+                                </label>
+                            </li>
+                            <li class="filter__item">
+                                <label>
+                                    Omega
+                                    <input type="checkbox" name="brand" value="omega" class="filter__checkbox">
+                                </label>
+                            </li>
+                            <li class="filter__item">
+                                <label>
+                                    Montblanc
+                                    <input type="checkbox" name="brand" value="montblanc" class="filter__checkbox">
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="filter__checkboxes">
+                        <legend class="filter__legend">Механизм<button class="filter__button filter__button--hide"></button></legend>
+                        <ul class="filter__list visually-hidden">
+                            <li class="filter__item">
+                                <label>
+                                    Электронные
+                                    <input type="checkbox" name="struct" value="electronical" id="" class="filter__checkbox">
+                                </label>
+                            </li>
+                            <li class="filter__item">
+                                <label>
+                                    Механические
+                                    <input type="checkbox" name="struct" value="gearbased" id="" class="filter__checkbox">
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="filter__checkboxes">
+                        <legend class="filter__legend">Материал<button class="filter__button filter__button--hide"></button></legend>
+                        <ul class="filter__list visually-hidden">
+                            <li class="filter__item">
+                                <label>
+                                    Кожа
+                                    <input type="checkbox" value="leather" name="material" class="filter__checkbox">
+                                </label>
+                            </li>
+                            <li class="filter__item">
+                                <label>
+                                    Другое
+                                    <input type="checkbox" value="other" name="material" class="filter__checkbox">
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="filter__checkboxes">
+                        <legend class="filter__legend">Цвет<button class="filter__button filter__button--hide"></button></legend>
+                        <ul class="filter__list visually-hidden">
+                            <li class="filter__item">
+                                <label>
+                                    Красный
+                                    <input type="checkbox" name="color" value="red" class="filter__checkbox">
+                                </label>
+                            </li>
+                            <li class="filter__item">
+                                <label>
+                                    Синий
+                                    <input type="checkbox" name="color" value="blue" class="filter__checkbox">
+                                </label>
+                            </li>
+                            <li class="filter__item">
+                                <label>
+                                    Черный
+                                    <input type="checkbox" name="color" value="black" class="filter__checkbox">
+                                </label>
+                            </li>
+                            <li class="filter__item">
+                                <label>
+                                    Белый
+                                    <input type="checkbox" name="color" value="white" class="filter__checkbox">
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="filter__reset">Сбросить фильтр</button>
                 </form>
+                <ul class="catalog__watches">
+                    <li class="catalog__watch">
+                        <a href="./info.html">
+                            <h3 class="watch__name">Techne</h3>
+                            <span class="watch__price">12 700 ₽</span>
+                            <img src="img/catalog/watch_1.png" alt="Часы Techne" class="watch__image">
+                        </a>
+                    </li>
+                    <li class="catalog__watch">
+                        <a href="./info.html">
+                            <h3 class="watch__name">Techne</h3>
+                            <span class="watch__price">12 700 ₽</span>
+                            <img src="img/catalog/watch_2.png" alt="Часы Techne" class="watch__image">
+                        </a>
+                    </li>
+                    <li class="catalog__watch">
+                        <a href="./info.html">
+                            <h3 class="watch__name">Techne</h3>
+                            <span class="watch__price">15 700 ₽</span>
+                            <img src="img/catalog/watch_3.png" alt="Часы Techne" class="watch__image">
+                        </a>
+                    </li>
+                    <li class="catalog__watch">
+                        <a href="./info.html">
+                            <h3 class="watch__name">Techne</h3>
+                            <span class="watch__price">15 700 ₽</span>
+                            <img src="img/catalog/watch_4.png" alt="Часы Techne" class="watch__image">
+                        </a>
+                    </li>
+                    <li class="catalog__watch">
+                        <a href="./info.html">
+                            <h3 class="watch__name">Techne</h3>
+                            <span class="watch__price">12 700 ₽</span>
+                            <img src="img/catalog/watch_5.png" alt="Часы Techne" class="watch__image">
+                        </a>
+                    </li>
+                    <li class="catalog__commercial">
+                        <span class="commercial__procentage">-20%</span>
+                        <p class="commercial__description">На вторую позицию в чеке</p>
+                        <img src="img/catalog/promo-watch.png" alt="Изображение часов" class="commercial__image">
+                    </li>
+                    <li class="catalog__watch">
+                        <a href="./info.html">
+                            <h3 class="watch__name">Techne</h3>
+                            <span class="watch__price">72 700 ₽</span>
+                            <img src="img/catalog/watch_6.png" alt="Часы Techne" class="watch__image">
+                        </a>
+                    </li>
+                    <li class="catalog__watch">
+                        <a href="./info.html">
+                            <h3 class="watch__name">Techne</h3>
+                            <span class="watch__price">22 700 ₽</span>
+                            <img src="img/catalog/watch_7.png" alt="Часы Techne" class="watch__image">
+                        </a>
+                    </li>
+                    <li class="catalog__watch">
+                        <a href="./info.html">
+                            <h3 class="watch__name">Rado</h3>
+                            <span class="watch__price">22 000 ₽</span>
+                            <img src="img/catalog/watch_8.png" alt="Часы Rado" class="watch__image">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="watches__pagination">
+                <button class="pagination__button--right pagination__button"></button>
+                <ul class="pagination__pages pagination__pages--wrap">
+                    <li class="pagination__page"><a href="#">1</a></li>
+                    <li class="pagination__page"><a href="#">2</a></li>
+                    <li class="pagination__page"><a href="#">3</a></li>
+                    <li class="pagination__page"><a href="#">12</a></li>
+                </ul>
+                <button class="pagination__button--left pagination__button"></button>
+            </div>
+        </section>
+
+        <section class="bands">
+            <div class="bands__header">
+                <h2 class="bands__heading">Ремешки</h2>
+                <a href="" class="bands__link">Смотреть все</a>
+            </div>
+            <div class="bands__slider">
+                <div class="slider__controls">
+                    <button class="control__button control__button--left" aria-label="Левая кнопка слайдера"></button>
+                    <button class="control__button control__button--left" aria-label="Правая кнопка слайдера"></button>
+                </div>
+                <ul class="slider__list">
+                    <li class="slider__item">
+                        <a href="" class="item__link">
+                            <h3 class="item__title">Georg Jensen</h3>
+                            <span class="item__price">6 500 ₽</span>
+                            <img src="img/catalog/band_1.png" alt="Ремешок Georg Jensen" class="item__image">
+                        </a>
+                    </li>
+                    <li class="slider__item">
+                        <a href="" class="item__link">
+                            <h3 class="item__title">Nato</h3>
+                            <span class="item__price">3 200 ₽</span>
+                            <img src="img/catalog/band_2.png" alt="Ремешок Nato" class="item__image">
+                        </a>
+                    </li>
+                    <li class="slider__item">
+                        <a href="" class="item__link">
+                            <h3 class="item__title">Spark</h3>
+                            <span class="item__price">5 400 ₽</span>
+                            <img src="img/catalog/band_3.png" alt="Ремешок Spark" class="item__image">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>

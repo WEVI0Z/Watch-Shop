@@ -1,0 +1,38 @@
+.path {
+    width: $pc-width;
+    margin: auto;
+    margin-left: 172px;
+
+    &__list {
+        display: flex;
+        padding: 0;
+        margin-top: 43px;
+
+        list-style-type: none;
+    }
+
+    &__link {
+        color: #B3B3B3;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: capitalize;
+
+        &--active {
+            color: #555248;
+        }
+
+        &:hover, &:focus {
+            opacity: 0.5;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+    }
+
+    svg {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
