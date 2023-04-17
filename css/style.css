@@ -1212,3 +1212,181 @@ template {
           position: absolute;
           top: 0;
           left: 0; }
+
+.watched {
+  width: 1336px;
+  margin: auto; }
+  .watched__title {
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 92px;
+    font-family: "PlayfairDisplay", Times, serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px; }
+  .watched__slider {
+    padding-left: 90px;
+    position: relative; }
+    .watched__slider .slider__controls .control__button {
+      position: absolute;
+      top: 191.5px;
+      background: none;
+      border: none; }
+      .watched__slider .slider__controls .control__button--right {
+        right: 44px; }
+      .watched__slider .slider__controls .control__button--left {
+        left: 36px; }
+      .watched__slider .slider__controls .control__button:hover, .watched__slider .slider__controls .control__button:focus {
+        opacity: 0.5;
+        cursor: pointer; }
+      .watched__slider .slider__controls .control__button:active {
+        opacity: 0.7; }
+    .watched__slider .slider__list {
+      display: flex;
+      padding: 0;
+      margin-bottom: 38px;
+      position: relative;
+      list-style-type: none; }
+      .watched__slider .slider__list .slider__item {
+        width: 360px;
+        min-height: 374px;
+        position: relative;
+        margin-bottom: 53px;
+        margin-right: 30px;
+        background-color: #FDFDFB; }
+        .watched__slider .slider__list .slider__item .item__link {
+          display: flex;
+          padding-top: 39px;
+          padding-left: 20px;
+          flex-direction: column; }
+        .watched__slider .slider__list .slider__item .item__title {
+          padding: 0;
+          margin: 0;
+          color: #444240;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase; }
+        .watched__slider .slider__list .slider__item .item__price {
+          margin-top: 3px;
+          color: #636261;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px; }
+        .watched__slider .slider__list .slider__item .item__image {
+          position: absolute;
+          top: 0;
+          left: 0; }
+
+.review {
+  width: 1336px;
+  margin: auto;
+  position: relative;
+  display: flex; }
+  .review .review__image-slider {
+    margin-left: 143px;
+    width: 560px; }
+    .review .review__image-slider .slider__controls .control__button {
+      position: absolute;
+      top: 242px;
+      background: none;
+      border: none; }
+      .review .review__image-slider .slider__controls .control__button--right {
+        right: 682px; }
+      .review .review__image-slider .slider__controls .control__button--left {
+        left: 96px; }
+      .review .review__image-slider .slider__controls .control__button:hover, .review .review__image-slider .slider__controls .control__button:focus {
+        opacity: 0.5;
+        cursor: pointer; }
+      .review .review__image-slider .slider__controls .control__button:active {
+        opacity: 0.7; }
+    .review .review__image-slider .slider__list {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin-left: -36px;
+      margin-top: 10px;
+      list-style-type: none; }
+      .review .review__image-slider .slider__list .slider__item {
+        margin-right: 20px;
+        background: rgba(100, 100, 100, 0.15); }
+        .review .review__image-slider .slider__list .slider__item--active {
+          background-color: #fff; }
+        .review .review__image-slider .slider__list .slider__item:hover, .review .review__image-slider .slider__list .slider__item:focus {
+          opacity: 0.5; }
+        .review .review__image-slider .slider__list .slider__item:active {
+          opacity: 0.7; }
+  .review .review__overview {
+    margin-top: 82px;
+    margin-left: 43px;
+    position: relative;
+    width: 580px; }
+    .review .review__overview .review__name {
+      margin: 0;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 37px;
+      letter-spacing: 0.05em; }
+    .review .review__overview .review__price {
+      display: block;
+      margin-top: 10px;
+      color: #686868;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px; }
+    .review .review__overview .review__like-button {
+      background: none;
+      border: none;
+      position: absolute;
+      right: 123px;
+      top: 8px; }
+      .review .review__overview .review__like-button:hover, .review .review__overview .review__like-button:focus {
+        opacity: 0.5;
+        cursor: pointer; }
+      .review .review__overview .review__like-button:active {
+        opacity: 0.7; }
+    .review .review__overview .review__sections {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      margin-top: 40px;
+      list-style-type: none; }
+      .review .review__overview .review__sections .review__section {
+        position: relative;
+        margin-right: 44px; }
+        .review .review__overview .review__sections .review__section .section__link {
+          color: #444240;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px; }
+          .review .review__overview .review__sections .review__section .section__link:hover, .review .review__overview .review__sections .review__section .section__link:focus {
+            text-decoration: none;
+            opacity: 0.5; }
+          .review .review__overview .review__sections .review__section .section__link:active {
+            opacity: 0.7; }
+          .review .review__overview .review__sections .review__section .section__link--active::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            bottom: -5px;
+            left: 0px;
+            border-top: 1px solid #C4C0B6; }
+    .review .review__overview .review__description {
+      margin-top: 30px;
+      width: 440px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 23px;
+      color: #000; }
+      .review .review__overview .review__description .review__paragraph {
+        margin-top: 20px; }
+    .review .review__overview .review__button {
+      margin-top: 52px;
+      padding: 22px 54px;
+      letter-spacing: 0.05em; }
+      .review .review__overview .review__button:hover, .review .review__overview .review__button:focus {
+        opacity: 0.5;
+        cursor: pointer; }
+      .review .review__overview .review__button:active {
+        opacity: 0.7; }
