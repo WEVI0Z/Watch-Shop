@@ -1123,3 +1123,70 @@ template {
         .watches__pagination .pagination__pages .pagination__page--active::after {
           content: "...";
           margin-left: 7px; }
+
+.bands {
+  width: 1336px;
+  margin: auto; }
+  .bands__header {
+    display: flex; }
+  .bands__heading {
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 92px;
+    font-family: "PlayfairDisplay", Times, serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px; }
+  .bands__link {
+    margin-left: 900px;
+    margin-top: 70px;
+    position: relative; }
+    .bands__link::before {
+      content: "";
+      width: 101.5px;
+      position: absolute;
+      top: 25px;
+      left: 1px;
+      border-top: 1px solid #C4C0B6; }
+    .bands__link:hover, .bands__link:focus {
+      opacity: 0.5;
+      text-decoration: none; }
+    .bands__link:active {
+      opacity: 0.7; }
+  .bands__slider {
+    padding-left: 90px; }
+    .bands__slider .slider__list {
+      display: flex;
+      padding: 0;
+      list-style-type: none; }
+      .bands__slider .slider__list .slider__item {
+        width: 252px;
+        min-height: 300px;
+        position: relative;
+        margin-right: 35px;
+        margin-bottom: 35px;
+        background-color: #FDFDFB; }
+        .bands__slider .slider__list .slider__item .item__link {
+          display: flex;
+          padding-top: 19px;
+          padding-left: 20px;
+          flex-direction: column; }
+        .bands__slider .slider__list .slider__item .item__title {
+          padding: 0;
+          margin: 0;
+          color: #444240;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase; }
+        .bands__slider .slider__list .slider__item .item__price {
+          margin-top: 3px;
+          color: #636261;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px; }
+        .bands__slider .slider__list .slider__item .item__image {
+          position: absolute;
+          top: 0;
+          left: 0; }
