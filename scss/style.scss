@@ -12,13 +12,15 @@
 @import "components/footer.scss";
 @import "components/buttons.scss";
 @import "components/path.scss";
+@import "components/site-navgiation.scss";
+@import "components/watches.scss";
 
 // Pages
 @import "pages/main/promo.scss";
 @import "pages/main/popular.scss";
 @import "pages/main/qualities.scss";
 @import "pages/main/news.scss";
-@import "pages/catalog/watches.scss";
+@import "pages/catalog/watches-catalog.scss";
 @import "pages/catalog/bands.scss";
 @import "pages/info/watched.scss";
 @import "pages/info/review.scss";

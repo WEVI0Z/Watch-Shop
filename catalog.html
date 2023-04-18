@@ -9,6 +9,7 @@
 </head>
 <body class="body--second-background">
     <header class="header">
+        <h1 class="header__title visually-hidden">Conquest</h1>
         <a href="./index.html" class="header__link">
             <svg class="header__logo" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.0099 5.69434C18.8207 7.20647 19.1602 8.84382 19.0802 10.4398C18.9256 13.5217 17.2074 16.4468 14.2917 18.0103C12.5877 18.924 10.7244 19.2394 8.94038 19.0299C6.08509 18.6947 3.43639 17.0161 1.97576 14.292C-0.398422 9.86431 1.2663 4.35026 5.694 1.97607C6.74841 1.41069 7.86326 1.07467 8.9822 0.949999C10.622 0.767294 12.2725 1.03833 13.754 1.70967C15.5103 2.50552 17.0281 3.86323 18.0099 5.69434Z" stroke="url(#paint0_linear_0_497)"/>
@@ -19,14 +20,14 @@
                     </linearGradient>
                 </defs>
             </svg>
-            <h1 class="header__heading">
+            <p class="header__heading">
                 Conquest
-            </h1>
+            </p>
         </a>
-        <nav class="header__site-navigation">
-            <ul class="site-navigation__list">
+        <nav class="site-navigation">
+            <ul class="site-navigation__list site-navigation__list--center">
                 <li class="site-navigation__item">
-                    <a href="./catalog.html" class="site-navigation__link site-navigation__link--active">
+                    <a href="./catalog.html" class="site-navigation__link">
                         Каталог
                     </a>
                 </li>
@@ -46,28 +47,26 @@
                     </a>
                 </li>
             </ul>
-        </nav>
-        <nav class="header__user-navigation">
-            <ul class="user-navigation__list">
-                <li class="user-navigation__item">
-                    <a href="#" class="user-navigation__link" aria-label="Поиск">
+            <ul class="site-navigation__list site-navigation__list--right">
+                <li class="site-navigation__item">
+                    <a href="#" class="site-navigation__link" aria-label="Поиск">
                         <svg width="16" height="18">
                             <use xlink:href="img/sprite.svg#search"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="user-navigation__item">
-                    <span class="user-navigation__updates">
+                <li class="site-navigation__item">
+                    <span class="site-navigation__updates">
                         1
                     </span>
-                    <a href="#" class="user-navigation__link" aria-label="Понравившеися">
+                    <a href="#" class="site-navigation__link" aria-label="Понравившеися">
                         <svg width="21" height="18">
                             <use xlink:href="img/sprite.svg#heart"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="user-navigation__item">
-                    <a href="#" class="user-navigation__link" aria-label="Корзина">
+                <li class="site-navigation__item">
+                    <a href="#" class="site-navigation__link" aria-label="Корзина">
                         <svg width="16" height="16">
                             <use xlink:href="img/sprite.svg#cart"></use>
                         </svg>
@@ -103,10 +102,10 @@
             </ul>
         </div>
 
-        <section class="watches">
-            <div class="watches__header">
-                <h2 class="watches__title">Мужские часы</h2>
-                <div class="watches__sort">
+        <section class="watches-catalog">
+            <div class="watches-catalog__header">
+                <h2 class="watches-catalog__title">Мужские часы</h2>
+                <div class="watches-catalog__sort">
                     <span class="sort__text">
                         Сортировать по:
                     </span>
@@ -118,7 +117,7 @@
                     </button>
                 </div>
             </div>
-            <div class="watches__catalog">
+            <div class="watches-catalog__catalog">
                 <form action="" method="get" class="catalog__filter">
                     <button class="filter__button" aria-label="Кнопка 'Скрыть/Развернуть'">
                         <legend class="filter__legend">
@@ -322,7 +321,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="watches__pagination">
+            <div class="watches-catalog__pagination">
                 <a href="#" class="pagination__button--right pagination__button" aria-label="Левая кнопка">
                     <svg width="7" height="12">
                         <use xlink:href="img/sprite.svg#arrow-left"></use>

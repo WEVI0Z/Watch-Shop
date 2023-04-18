@@ -9,6 +9,7 @@
 </head>
 <body>
     <header class="header">
+        <h1 class="header__title visually-hidden">Conquest</h1>
         <a href="./index.html" class="header__link">
             <svg class="header__logo" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.0099 5.69434C18.8207 7.20647 19.1602 8.84382 19.0802 10.4398C18.9256 13.5217 17.2074 16.4468 14.2917 18.0103C12.5877 18.924 10.7244 19.2394 8.94038 19.0299C6.08509 18.6947 3.43639 17.0161 1.97576 14.292C-0.398422 9.86431 1.2663 4.35026 5.694 1.97607C6.74841 1.41069 7.86326 1.07467 8.9822 0.949999C10.622 0.767294 12.2725 1.03833 13.754 1.70967C15.5103 2.50552 17.0281 3.86323 18.0099 5.69434Z" stroke="url(#paint0_linear_0_497)"/>
@@ -19,12 +20,12 @@
                     </linearGradient>
                 </defs>
             </svg>
-            <h1 class="header__heading">
+            <p class="header__heading">
                 Conquest
-            </h1>
+            </p>
         </a>
-        <nav class="header__site-navigation">
-            <ul class="site-navigation__list">
+        <nav class="site-navigation">
+            <ul class="site-navigation__list site-navigation__list--center">
                 <li class="site-navigation__item">
                     <a href="./catalog.html" class="site-navigation__link">
                         Каталог
@@ -46,28 +47,26 @@
                     </a>
                 </li>
             </ul>
-        </nav>
-        <nav class="header__user-navigation">
-            <ul class="user-navigation__list">
-                <li class="user-navigation__item">
-                    <a href="#" class="user-navigation__link" aria-label="Поиск">
+            <ul class="site-navigation__list site-navigation__list--right">
+                <li class="site-navigation__item">
+                    <a href="#" class="site-navigation__link" aria-label="Поиск">
                         <svg width="16" height="18">
                             <use xlink:href="img/sprite.svg#search"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="user-navigation__item">
-                    <span class="user-navigation__updates">
+                <li class="site-navigation__item">
+                    <span class="site-navigation__updates">
                         1
                     </span>
-                    <a href="#" class="user-navigation__link" aria-label="Понравившеися">
+                    <a href="#" class="site-navigation__link" aria-label="Понравившеися">
                         <svg width="21" height="18">
                             <use xlink:href="img/sprite.svg#heart"></use>
                         </svg>
                     </a>
                 </li>
-                <li class="user-navigation__item">
-                    <a href="#" class="user-navigation__link" aria-label="Корзина">
+                <li class="site-navigation__item">
+                    <a href="#" class="site-navigation__link" aria-label="Корзина">
                         <svg width="16" height="16">
                             <use xlink:href="img/sprite.svg#cart"></use>
                         </svg>
@@ -76,7 +75,7 @@
             </ul>
         </nav>
     </header>
-    <main class="main-page">
+    <main>
         <section class="promo">
             <h2 class="promo__title visually-hidden">Промо каталога</h2>
             <div class="promo__catalog">
@@ -97,24 +96,24 @@
                     <h2 class="popular__heading">Популярные модели</h2>
                     <a href="#" class="popular__link">Смотреть все</a>
                 </div>
-                <ul class="popular__watches">
-                    <li class="popular__watch">
-                        <h3 class="watch__name">RADO</h3>
-                        <span class="watch__price">65 300 ₽</span>
-                        <img width="313" height="313" src="img/main/main-watch-1.png" alt="Часы RADO" class="watch__image">
-                        <a href="#" class="watch__link">Подробнее</a>
+                <ul class="watches">
+                    <li class="watches__item">
+                        <h3 class="watches__name">RADO</h3>
+                        <span class="watches__price">65 300 ₽</span>
+                        <img class="watches__image" width="313" height="313" src="img/main/main-watch-1.png" alt="Часы RADO">
+                        <a href="info.html" class="watches__link">Подробнее</a>
                     </li>
-                    <li class="popular__watch">
-                        <h3 class="watch__name">BVLGARI</h3>
-                        <span class="watch__price">81 700 ₽</span>
-                        <img width="313" height="313" src="img/main/main-watch-2.png" alt="Часы BVLGARI" class="watch__image">
-                        <a href="#" class="watch__link">Подробнее</a>
+                    <li class="watches__item">
+                        <h3 class="watches__name">BVLGARI</h3>
+                        <span class="watches__price">81 700 ₽</span>
+                        <img class="watches__image" width="313" height="313" src="img/main/main-watch-2.png" alt="Часы BVLGARI">
+                        <a href="info.html" class="watches__link">Подробнее</a>
                     </li>
-                    <li class="popular__watch">
-                        <h3 class="watch__name">BVLGARI</h3>
-                        <span class="watch__price">72 700 ₽</span>
-                        <img width="313" height="313" src="img/main/main-watch-3.png" alt="Часы BVLGARI" class="watch__image">
-                        <a href="#" class="watch__link">Подробнее</a>
+                    <li class="watches__item">
+                        <h3 class="watches__name">BVLGARI</h3>
+                        <span class="watches__price">72 700 ₽</span>
+                        <img class="watches__image" width="313" height="313" src="img/main/main-watch-3.png" alt="Часы BVLGARI">
+                        <a href="info.html" class="watches__link">Подробнее</a>
                     </li>
                 </ul>
             </section>
@@ -124,22 +123,22 @@
             <div class="qualities__slider">
                 <ul class="qualities__slides">
                     <li class="qualities__slide">
-                        <img src="img/main/quality-banner.jpg" alt="Часы" class="slide__picture">
-                        <div class="slide__right-side">
-                            <h3 class="slide__title">Подлинное качество</h3>
-                            <p class="slide__description">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
-                            <a href="" class="slide__button button">Смотреть каталог</a>
+                        <img class="qualities__slide__picture" src="img/main/quality-banner.jpg" alt="Часы">
+                        <div class="qualities__slide__right-side">
+                            <h3 class="qualities__slide__title">Подлинное качество</h3>
+                            <p class="qualities__slide__description">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
+                            <a href="catalog.html" class="qualities__slide__button button">Смотреть каталог</a>
                         </div>
                     </li>
                 </ul>
-                <div class="slider__controls">
-                    <button class="slider__arrow slider__arrow--left">
+                <div class="qualities__slider__controls">
+                    <button class="qualities__slider__arrow slider__arrow--left">
                         <svg width="7" height="12">
                             <use xlink:href="img/sprite.svg#arrow-left"></use>
                         </svg>
                     </button>
-                    <span class="slider__page-number">01</span>
-                    <button class="slider__arrow slider__arrow--right">
+                    <span class="qualities__slider__page-number">01</span>
+                    <button class="qualities__slider__arrow slider__arrow--right">
                         <svg width="7" height="12">
                             <use xlink:href="img/sprite.svg#arrow-right"></use>
                         </svg>
@@ -178,11 +177,11 @@
                     </ul>
                 </div>
                 <div class="news__images">
-                    <div class="images__left-side">
-                        <img width="242" height="228" src="img/main/news-1.jpg" alt="Часы на руке" class="news__image">
-                        <img width="242" height="228" src="img/main/news-2.jpg" alt="Часы на земле" class="news__image">
+                    <div class="news__images__left-side">
+                        <img class="news__image" width="242" height="228" src="img/main/news-1.jpg" alt="Часы на руке">
+                        <img class="news__image" width="242" height="228" src="img/main/news-2.jpg" alt="Часы на земле">
                     </div>
-                    <img class="images__right-side" width="377" height="460" src="img/main/news-3.jpg" alt="Часы на руке" class="news_image">
+                    <img class="news__images__right-side" width="377" height="460" src="img/main/news-3.jpg" alt="Часы на руке" class="news_image">
                 </div>
             </section>
         </div>

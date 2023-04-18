@@ -59,18 +59,18 @@
         padding-top: 68px;
         padding-left: 60px;
         display: flex;
+    }
 
-        .images__left-side {
-            display: flex;
-            flex-direction: column;
+    &__images__left-side {
+        display: flex;
+        flex-direction: column;
 
-            img {
-                margin-bottom: 5px;
-            }
+        img {
+            margin-bottom: 5px;
         }
+    }
 
-        .images__right-side {
-            margin-left: 5px;
-        }
+    &__images__right-side {
+        margin-left: 5px;
     }
 }
