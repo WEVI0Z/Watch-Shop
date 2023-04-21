@@ -576,6 +576,7 @@ template {
   display: flex;
   margin-left: 120px;
   margin-right: 64px;
+  flex-wrap: wrap;
   padding: 0;
   justify-content: space-between;
   list-style-type: none; }
