@@ -1,0 +1,402 @@
+.watches-catalog {
+    width: $pc-width;
+    margin: auto;
+
+    &__title {
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 95px;
+
+        font-family: $playfair;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__sort {
+        display: flex;
+        align-items: center;
+        margin-left: 698px;
+        margin-top: 15px;
+
+        .sort__text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #BDB9B5;
+        }
+
+        .sort__button {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+
+            background: none;
+            border: none;
+
+            &--up-to-down svg {
+                transform: rotate(360deg);
+            }
+
+            .sort__arrow {
+                margin-left: 5px;
+                transform: rotate(180deg);
+
+                &--up-to-down {
+                    transform: rotate(0deg);
+                }
+            }
+
+            &:hover, &:focus {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+
+            &:active {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    &__catalog {
+        display: flex;
+
+        .catalog__filter {
+            width: 230px;
+            margin-top: 29px;
+            margin-left: 94px;
+
+            .filter__button {
+                background: none;
+                border: none;
+                position: relative;
+                width: 230px;
+
+                .filter__legend {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+
+                &--hide::after {
+                    content: "";
+                    height: 10px;
+                    top: 2.5px;
+                    right: 4.5px;
+                    position: absolute;
+                    border-left: 1px solid #1B1A17;
+                }
+
+                &::before {
+                    content: "";
+                    width: 10px;
+                    top: 7px;
+                    right: 0px;
+                    position: absolute;
+                    border-top: 1px solid #1B1A17;
+                }
+
+                &:hover, &:focus {
+                    opacity: 0.5;
+                    cursor: pointer;
+                }
+
+                &:active {
+                    opacity: 0.7;
+                }
+            }
+
+            .filter__price-slider {
+                position: relative;
+                min-height: 50px;
+                margin-bottom: 26px;
+
+                .slider__line {
+                    width: 230px;
+                    position: absolute;
+                    top: 20px;
+
+                    border-top: 1px solid #D4D4D4;
+
+                    &--fulled {
+                        position: absolute;
+                        width: 120px;
+                        top: 20px;
+                        left: 30px;
+
+                        border-top: 1px solid #1B1A17;
+
+                    }
+                }
+
+                .slider__drags {
+                    .slider__button {
+                        position: absolute;
+                        background: none;
+                        border: none;
+                        top: 28px;
+                        
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -13px;
+                            left: 24px;
+                            width: 9px;
+                            height: 9px;
+
+                            border: 1px solid #1B1A17;
+                            border-radius: 50%;
+                            background-color: #FFF;
+                        }
+
+                        &--left {
+                            left: 3px;
+                        }
+
+                        &--right {
+                            right: 50px;
+                        }
+                    }
+                }
+            }
+
+            .filter__checkboxes {
+                border: none;
+                padding: 0;
+                margin: 0;
+                margin-top: 12px;
+                
+                .filter__list {
+                    padding: 0;
+                    padding-left: 32px;
+
+                    list-style-type: none;
+
+                    .filter__item {
+                        margin-bottom: 14px;
+
+                        label {
+                            position: relative;
+
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: #6F6E6D;
+
+                            &::before {
+                                content: "";
+                                width: 11px;
+                                height: 11px;
+                                position: absolute;
+                                top: 0;
+                                left: -29px;
+                                border: 1px solid #6F6E6D;
+                            }
+
+                            &:has(.filter__checkbox:checked)::before {
+                                width: 13px;
+                                height: 13px;
+
+                                background-image: url("/img/catalog/filter-checked.svg");
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                border: none;
+                            }
+
+                            .filter__checkbox {
+                                position: absolute !important;
+                                clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+                                clip: rect(1px, 1px, 1px, 1px);
+                                padding:0 !important;
+                                border:0 !important;
+                                height: 1px !important; 
+                                width: 1px !important; 
+                                overflow: hidden;
+                            }
+
+                            &:hover, &:focus {
+                                opacity: 0.5;
+                                cursor: pointer;
+                            }
+
+                            &:active {
+                                opacity: 0.7;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .filter__reset {
+                margin-top: 27px;
+                margin-left: 4px;
+                padding: 22px 50px;
+
+                color: #1D1A1A;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+
+                border: 1px solid #E7E0CF;
+                background: none;
+
+                &:hover, &:focus {
+                    opacity: 0.5;
+                    cursor: pointer;
+                }
+
+                &:active {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        .catalog__watches {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 28px;
+            margin-left: 52px;
+
+            list-style-type: none;
+
+            .catalog__commercial {
+                width: 250px;
+                height: 300px;
+                background-image: url("/img/catalog/banner_catalog.jpg");
+            
+                .commercial__procentage {
+                    display: block;
+                    margin-top: 92px;
+                    margin-left: 38px;
+                    
+                    font-family: $playfair;
+                    font-weight: 700;
+                    font-size: 45px;
+                    color: #fff;
+                }
+
+                .commercial__description {
+                    width: 100px;
+                    margin-top: 8px;
+                    margin-left: 40px;
+
+                    font-family: $playfair;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-transform: uppercase;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    color: #fff;
+                }
+            }
+
+            .catalog__watch {
+                width: 252px;
+                min-height: 300px;
+                position: relative;
+                margin-right: 35px;
+                margin-bottom: 35px;
+
+                background-color: #FDFDFB;
+
+                a {
+                    display: flex;
+                    padding-top: 19px;
+                    padding-left: 20px;
+                    flex-direction: column;
+
+                    .watch__name {
+                        padding: 0;
+                        margin: 0;
+
+                        color: #444240;
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 21px;
+                        letter-spacing: 0.05em;
+                        text-transform: uppercase;
+                    }
+    
+                    .watch__price {
+                        margin-top: 3px;
+
+                        color: #636261;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+    
+                    .watch__image {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        align-items: center;
+        margin-left: 1125px;
+        margin-top: -8px;
+
+        .pagination__button {
+            border: none;
+            background: none;
+
+            &:hover, &:focus {
+                opacity: 0.5;
+            }
+
+            &:active {
+                opacity: 0.7;
+            }
+        }
+
+        .pagination__pages {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            margin-left: 11px;
+            margin-right: 5px;
+
+            list-style-type: none;
+
+            .pagination__page {
+                margin-right: 7px;
+
+                a {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #B6B6B6;
+                }
+
+
+                &--active a {
+                    color: #1B1A17;
+                }
+
+                &--active::after {
+                    content: "...";
+                    margin-left: 7px;
+                    
+                }
+            }
+        }
+    }
+}

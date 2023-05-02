@@ -1,0 +1,30 @@
+.header {
+    min-height: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    width: $pc-width;
+    margin: auto;
+    position: relative;
+
+    &__link {
+        margin-left: 119px;
+    }
+
+    &__heading {
+        margin: 0;
+        margin-top: 36px;
+
+        font-family: "PlayfairDisplay";
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 12px;
+        letter-spacing: 1.5px;
+        color: $header-text-color;
+    }
+
+    &__logo {
+        position: absolute;
+        top: 33px;
+        left: 97px;
+    }
+}

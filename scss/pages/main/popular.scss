@@ -1,0 +1,60 @@
+.popular__wrapper {
+    width: 100%;
+    background-color: #fff;
+}
+
+.popular {
+    padding-top: 50px;
+    min-height: 655px;
+    width: $pc-width;
+    margin: auto;
+    background-color: #fff;
+
+    &__header {
+        min-height: 80px;
+        position: relative;
+    }
+
+    &__heading {
+
+        text-align: center;
+        font-family: $playfair;
+        font-weight: normal;
+        font-size: 32px;    
+        line-height: 43px;
+    }
+
+    &__link {
+        position: absolute;
+        top: 37px;
+        right: 94px;
+
+        color: #444240;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 25px;
+            left: 2px;
+            width: 101px;
+
+            border-top: 1px solid #8B8371;
+        }
+
+        &:hover, &:focus {
+            text-decoration: none;
+            opacity: 0.5;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+    }
+
+    .watches {
+        margin-top: 20px;
+    }
+}

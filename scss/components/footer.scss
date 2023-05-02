@@ -1,0 +1,109 @@
+.footer__wrapper {
+    width: 100%;
+    background-color: #444240;
+}
+
+.footer {
+    width: $pc-width;
+    margin: auto;
+    display: flex;
+    min-height: 275px;
+    color: #fff;
+
+    &__info {
+        padding-top: 70px;
+        padding-left: 180px;
+    }
+
+    &__link {
+        position: relative;
+
+        &:hover, &:focus {
+            text-decoration: none;
+
+            opacity: 0.5;
+        }
+
+        &:active {
+            opacity: 0.7;
+        }
+    }
+
+    &__heading {
+        margin-left: 30px;
+
+        font-family: "PlayfairDisplay";
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 2.5px;
+        color: #fff;
+    }
+
+    &__logo {
+        position: absolute;
+        top: -9px;
+        left: 0px;
+    }
+
+    &__contacts {
+        padding: 0;
+        margin-top: 23px;
+
+        list-style-type: none;
+
+        .footer__contact {
+            margin-bottom: 10px;
+
+            a {
+                color: #fff;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+
+    &__about {
+        margin-top: 65px;
+        margin-left: 143px;
+    }
+
+    &__clients {
+        margin-top: 65px;
+        margin-left: 143px;
+    }
+
+    &__shipment {
+        margin-top: 65px;
+        margin-left: 143px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+
+    &__list {
+        padding: 0;
+        margin-top: 25px;
+    
+        list-style-type: none;
+
+        .footer__item {
+            margin-bottom: 6px;
+        }
+
+        .footer__link {
+            color: #fff;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}

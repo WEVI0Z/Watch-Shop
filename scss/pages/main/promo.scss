@@ -1,0 +1,108 @@
+.promo {
+    width: $pc-width;
+    margin: auto;
+    display: flex;
+    min-height: 768px;
+
+    background-image: url("/img/main/promo-background.png");
+    background-repeat: no-repeat;
+    background-position-x: -14px;
+    background-size: cover;
+
+    &__catalog {
+        margin-top: 255px;
+        margin-left: 180px;
+
+        .catalog__title {
+            padding: 0;
+            margin: 0;
+            position: relative;
+
+            font-family: $playfair;
+            font-size: 45px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 29px;
+                left: -65px;
+                width: 50px;
+
+                border-top: 1px solid #8B8371;
+            }
+        }
+
+        .catalog__name {
+            padding: 0;
+            margin: 0;
+            margin-top: 8px;
+
+            font-family: $playfair;
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        .catalog__description {
+            width: 250px;
+            margin-top: 30px;
+
+            font-size: 14px;
+            font-weight: lighter;
+            line-height: 152%;
+        }
+
+        .catalog__button {
+            margin-top: 20px;
+            margin-left: -4px;
+        }
+    }
+
+    &__watch {
+        position: relative;
+
+        .watch__image {
+            position: absolute;
+            left: 124px;
+        }
+
+        .watch__price {
+            width: 100px;
+            position: absolute;
+            top: 156px;
+            left: 50px;
+
+            font-size: 16px;
+            font-family: $prata;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: 90px;
+                width: 50px;
+
+                border-top: 1px solid #8B8371;
+            }
+        }
+
+        .watch__description {
+            position: absolute;
+            width: 140px;
+            bottom: 105px;
+            left: 586px;
+
+            font-size: 16px;
+            font-family: $prata;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 5px;
+                left: -65px;
+                width: 50px;
+
+                border-top: 1px solid #8B8371;
+            }
+        }
+    }
+}
